@@ -150,3 +150,69 @@ Examples
 5  =>  4
 15  =>  13-3  =>  -3
 */
+
+/* week 5 - task 001
+Multiple of index
+Return a new array consisting of elements which are multiple 
+of their own index in input array (length > 1).
+Some cases:
+[22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
+[68, -1, 1, -7, 10, 10] => [-1, 10]
+[-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68] => [-85, 72, 0, 68]
+*/
+
+/* week 5 - task 011
+Triple Trouble
+Triple Trouble
+Create a function that will return a string that combines all of the letters of the three inputed strings in groups. Taking the first letter of all of the inputs and grouping them next to each other. Do this for every letter, see example below!
+E.g. Input: "aa", "bb" , "cc" => Output: "abcabc"
+Note: You can expect all of the inputs to be the same length.
+*/
+// TODOD:: redo with easier js default function
+
+/* week 7 - task 001 
+Find the Difference in Age between Oldest and Youngest Family Members
+At the annual family gathering, the family likes to find the oldest living family member’s age and the youngest family member’s age and calculate the difference between them.
+
+You will be given an array of all the family members' ages, in any order. The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed ‘age’ of 0. Return a new array (a tuple in Python) with [youngest age, oldest age, difference between the youngest and oldest age].
+
+
+*/
+
+/*
+SpeedCode #2 - Array Madness
+Objective
+Given two integer arrays a, b, both of length >= 1, create a program that returns true if the sum of the squares of each element in a is strictly greater than the sum of the cubes of each element in b.
+
+E.g.
+
+arrayMadness([4, 5, 6], [1, 2, 3]); // returns true since 4 ** 2 + 5 ** 2 + 6 ** 2 > 1 ** 3 + 2 ** 3 + 3 ** 3
+Get your timer out. Are you ready? Ready, get set, GO!!!
+
+*/
+
+/* week 7 - task 008
+Is the string uppercase?
+Task
+Add the isUpperCase method to String to see whether the string is ALL CAPS. For example:
+
+"c".isUpperCase() == false
+"C".isUpperCase() == true
+"hello I AM DONALD".isUpperCase() == false
+"HELLO I AM DONALD".isUpperCase() == true
+"ACSKLDFJSgSKLDFJSKLDFJ".isUpperCase() == false
+"ACSKLDFJSGSKLDFJSKLDFJ".isUpperCase() == true
+In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter so any string containing no letters at all is trivially considered to be in ALL CAPS.
+*/
+
+/* week 7 - task 009
+Playing with cubes II
+Hey Codewarrior!
+You already implemented a Cube class, but now we need your help again! I'm talking about constructors. We don't have one. Let's code two: One taking an integer and one handling no given arguments!
+Also we got a problem with negative values. Correct the code so negative values will be switched to positive ones!
+The constructor taking no arguments should assign 0 to Cube's Side property.
+*/
+// This Cube function needs help
+// change the constructor so that it can take an integer for the side or no args
+
+// https://github.com/Automedon/CodeWars-8-kyu-Soluitions
