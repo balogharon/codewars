@@ -50,16 +50,17 @@ In this example condition 1 is false and 2, 3, 4 are true. So the return value w
 [False, True, True, True]
  */
 const string_evaluation = (string, condition) => {
-  console.log(condition.map(a => a.regex()));
-
-  let x = string.split('#').length - 1,
-    a = string.split('a').length - 1,
-    b = string.split('b').length - 1,
-    c = string.split('c').length - 1,
-    cC = string.split('C').length - 1,
-    H = string.split('H').length - 1,
-    final = [a < b, x === 4, c >= cC, H != a];
+  let final = [];
+  const regex = /\d/;
+  condition.map(letter => {
+    let a = letter.substring(0, 1),
+      aL = regex.test(a) ? a : string.split(a).length - 1,
+      op = letter.substring(1, letter.length - 1),
+      b = letter.charAt(letter.length - 1),
+      bL = regex.test(b) ? b : string.split(b).length - 1,
+      ax = String(aL + op + bL);
+    final.push(eval(ax));
+  });
   return final;
 };
-
-console.log(string_evaluation('aab#HcCcc##l#', ['a<b', '#==4', 'c>=C', 'H!=a']));
+//console.log(string_evaluation('aab#HcCcc##l#', ['a<b', '#==4', 'c>=C', 'H!=a']));
