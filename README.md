@@ -2,7 +2,7 @@
 
 2021.
 I've successfully finished Epam's (4 month long) junior Front-End Program in 2021.
-I've got my certicifate in July 2021.
+I got my certicifate in July 2021.
 
 2022.
 From May 2022 I'm happy to continue learning at EPAM's new (4 month long) front-end program. 
