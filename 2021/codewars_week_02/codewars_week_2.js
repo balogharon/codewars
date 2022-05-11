@@ -47,7 +47,7 @@ O is misinterpreted as 0
 I is misinterpreted as 1
 The test cases contain numbers only by mistake.
 */
-const correct = string => {
+const correct = (string) => {
   const x = {
     0: 'O',
     1: 'I',
@@ -74,7 +74,7 @@ replace("!Hi! Hi!") === "!H!! H!!"
 replace("aeiou") === "!!!!!"
 replace("ABCDE") === "!BCD!"
 */
-const replace = s => s.replace(/[aeiou]/gi, '!');
+const replace = (s) => s.replace(/[aeiou]/gi, '!');
 // console.log(replace('ABCDE'));
 
 /* 
@@ -83,7 +83,7 @@ Convert number to reversed array of digits
 Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
 ex.: 348597 => [7,9,5,8,4,3]
 */
-const digitize = n => [...n.toString()].map(x => Number(x)).reverse((a, b) => a - b);
+const digitize = (n) => [...n.toString()].map((x) => Number(x)).reverse((a, b) => a - b);
 //console.log(digitize(100));
 
 /* 
@@ -117,7 +117,7 @@ const sumMul = (n, m) => {
 Hex to Decimal
 Complete the function which converts hex number (given as a string) to a decimal number.
 */
-const hexToDec = hex => parseInt(hex, 16); // TODO:: memo..
+const hexToDec = (hex) => parseInt(hex, 16); // TODO:: memo..
 //console.log(hexToDec('-C')); // 1
 //console.log(hexToDec('a')); // 10
 //console.log(hexToDec('10')); // 16
@@ -139,7 +139,7 @@ For example:
 [1, 2, 3] --> [2, 4, 6]
 For the beginner, try to use the map method - it comes in very handy quite a lot so is a good one to know.
 */
-const maps = x => x.map(x => x * 2);
+const maps = (x) => x.map((x) => x * 2);
 //console.log(maps([1, 2, 3]), [2, 4, 6]);
 //console.log(maps([4, 1, 1, 1, 4]), [8, 2, 2, 2, 8]);
 //console.log(maps([2, 2, 2, 2, 2, 2]), [4, 4, 4, 4, 4, 4]);
@@ -166,7 +166,7 @@ function greet(name){
   if(name === "Johnny")
     return "Hello, my love!";
 }*/
-const greet = name => `Hello, ${name === 'Johnny' ? 'my love' : name}!`;
+const greet = (name) => `Hello, ${name === 'Johnny' ? 'my love' : name}!`;
 // console.log(greet('Aron'));
 
 /* week 2 - task 012
@@ -183,7 +183,7 @@ The correct answer would be 17.
 Hint: Don't forget to check for bad values like null/undefined
 }*/
 // let arrayOfSheep = [true, true, true, false, true, true, true, true, true, false, true, false, true, false, false, true, true, true, true, true, false, false, true, true];
-const countSheeps = arrayOfSheep => arrayOfSheep.reduce((acc, v) => (v === true ? acc + 1 : acc), 0);
+const countSheeps = (arrayOfSheep) => arrayOfSheep.reduce((acc, v) => (v === true ? acc + 1 : acc), 0);
 //countSheeps(arrayOfSheep);
 
 /* week 2 - task 013
@@ -197,7 +197,7 @@ Note: The parameter is optional. So you have to give it a default value.
 const arr = (n = 0) => {
   return new Array(n)
     .fill(n)
-    .map(x => (n = n - 1))
+    .map((x) => (n = n - 1))
     .reverse();
 };
 arr();
@@ -223,7 +223,7 @@ Your task is to write a function that takes a String and returns an Array/list w
 Note: String will have at least one element; words will always be separated by a space.
 }*/
 
-const addLength = str => str.split(' ').map(x => `${x} ${x.length}`);
+const addLength = (str) => str.split(' ').map((x) => `${x} ${x.length}`);
 //console.log(addLength('apple ban'));
 
 /* week 2 - task 016
@@ -232,7 +232,7 @@ Complete the function which takes two arguments and returns all numbers which ar
 divisibleBy([1, 2, 3, 4, 5, 6], 2) == [2, 4, 6]
 }*/
 
-const divisibleBy = (n, d) => n.filter(x => x % d === 0);
+const divisibleBy = (n, d) => n.filter((x) => x % d === 0);
 //console.log(divisibleBy([1, 2, 3, 4, 5, 6], 2));
 
 /* week 2 - task 017
@@ -242,7 +242,7 @@ Example:
 "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
 }*/
 
-const reverseWords = str => str.split(' ').reverse().join(' ');
+const reverseWords = (str) => str.split(' ').reverse().join(' ');
 //console.log(reverseWords('hello world!'));
 
 /* week 2 - task 018
@@ -292,14 +292,14 @@ let NATO = {
   m: 'Mike',
   z: 'Zulu'
 };
-const to_nato = words => {
+const to_nato = (words) => {
   return words
     .split(' ')
-    .map(x =>
+    .map((x) =>
       x
         .toLowerCase()
         .split('')
-        .map(y => (y.match(/[,.!?]/gi) ? y : NATO[y]))
+        .map((y) => (y.match(/[,.!?]/gi) ? y : NATO[y]))
         .join(' ')
     )
     .join(' ');

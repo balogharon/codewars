@@ -9,7 +9,8 @@ From May 2022 I'm happy to continue learning at EPAM's new (4 month long) front-
 
 ## My Codewars profile: 
 https://www.codewars.com/users/balogharon
+
 During my first Epam studies I was honored with 644 kata on codewars website.
 
 ## Epam daily homework
-This repo show's some additional daily js pracitce.
+This repo show's some additional daily js pracitces from Codewars.
